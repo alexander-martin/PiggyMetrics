@@ -2,43 +2,32 @@ package com.piggymetrics.notification.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableMap;
-import com.piggymetrics.notification.NotificationServiceApplication;
 import com.piggymetrics.notification.domain.Frequency;
 import com.piggymetrics.notification.domain.NotificationSettings;
 import com.piggymetrics.notification.domain.NotificationType;
 import com.piggymetrics.notification.domain.Recipient;
 import com.piggymetrics.notification.service.RecipientService;
-import org.junit.Before;
-import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import static org.mockito.MockitoAnnotations.initMocks;
-
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = NotificationServiceApplication.class)
-@WebAppConfiguration
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@SpringApplicationConfiguration(classes = NotificationServiceApplication.class)
+//@WebAppConfiguration
 public class RecipientControllerTest {
 
     private static final ObjectMapper mapper = new ObjectMapper();
 
-    @InjectMocks
+    //    @InjectMocks
     private RecipientController recipientController;
 
-    @Mock
+    //    @Mock
     private RecipientService recipientService;
 
     private MockMvc mockMvc;
 
-    @Before
+    //    @Before
     public void setup() {
-        initMocks(this);
-        this.mockMvc = MockMvcBuilders.standaloneSetup(recipientController).build();
+//        initMocks(this);
+//        this.mockMvc = MockMvcBuilders.standaloneSetup(recipientController).build();
     }
 
 //	@Test
